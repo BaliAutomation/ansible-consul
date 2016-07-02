@@ -193,8 +193,6 @@
     - "{{ consul_restart_handler }}"
 
 - name: add CONSUL_RPC_ADDR to .bashrc
-  become: yes
-  become_user: "{{ consul_user }}"
   lineinfile: >
     dest={{ consul_home }}/.bashrc
     insertbefore=BOF 
