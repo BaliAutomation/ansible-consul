@@ -67,3 +67,4 @@
     group=root
     mode=0755
   when: consul_is_ui and consul_install_nginx_config and ansible_os_family == "RedHat"
+
